@@ -586,3 +586,87 @@ footer{
   display:block;
 }
 
+/* =========================
+   TECH STACK (FIXED - CLEAN)
+========================= */
+
+.tech-section{
+  padding:0 8% 120px 8%; /* match other sections */
+}
+
+.tech-section .title{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.tech-marquee{
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+  overflow:hidden;
+  position:relative;
+  border-radius:20px;
+}
+
+.tech-track{
+  display:flex;
+  align-items:center;
+  gap:50px;
+  width:max-content;
+  animation:scrollLeft 22s linear infinite;
+}
+
+.tech-track img{
+  width:55px;
+  height:55px;
+  transition:0.3s ease;
+}
+
+.tech-track img:hover{
+  transform:scale(1.2);
+}
+
+@keyframes scrollLeft{
+  from{ transform:translateX(0); }
+  to{ transform:translateX(-50%); }
+}
+
+.tech-marquee:hover .tech-track{
+  animation-play-state:paused;
+}
+
+.tech-marquee::before,
+.tech-marquee::after{
+  content:"";
+  position:absolute;
+  top:0;
+  width:80px;
+  height:100%;
+  z-index:2;
+}
+
+.tech-marquee::before{
+  left:0;
+  background:linear-gradient(to right, #0a0f1f, transparent);
+}
+
+.tech-marquee::after{
+  right:0;
+  background:linear-gradient(to left, #0a0f1f, transparent);
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+  .tech-track{
+    gap:35px;
+    animation-duration:18s;
+  }
+
+  .tech-track img{
+  width:55px;
+  height:55px;
+  transition:0.3s ease;
+}
+
+}
