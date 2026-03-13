@@ -244,10 +244,12 @@ section{
   padding:20px 40px;
 }
 
-.timeline-item:nth-child(odd){
-  left:0;
-  text-align:right;
+.timeline-item{
+  position:relative;
+  width:50%;
+  padding:20px 40px;
 }
+
 
 .timeline-item:nth-child(even){
   left:50%;
@@ -464,3 +466,123 @@ footer{
 .project-btn:hover{
   transform:translateX(5px);
 }
+
+
+/* Mobile Responsive */
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+    padding-top:140px;
+  }
+
+  .hero p{
+    margin:0 auto 30px auto;
+  }
+
+  .hero-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+  }
+
+  .hero-image{
+    margin-top:40px;
+  }
+
+  .timeline::before{
+    left:8px;
+  }
+
+  .timeline-item{
+    width:100%;
+    padding-left:40px;
+    padding-right:20px;
+    text-align:left !important;
+    left:0 !important;
+  }
+
+  .timeline-dot{
+    left:0 !important;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  nav{
+    padding:15px 5%;
+  }
+
+  nav ul{
+    gap:15px;
+  }
+
+  .hero h1{
+    font-size:2.2rem;
+  }
+
+  .hero p{
+    font-size:1rem;
+  }
+
+  section{
+    padding:0 5% 80px 5%;
+  }
+
+  .projects-container{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .project-card{
+    padding:30px;
+  }
+
+  .timeline-content{
+    padding:20px;
+  }
+}
+
+
+/* Small phones */
+@media (max-width: 480px) {
+
+  .hero h1{
+    font-size:1.8rem;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+  nav h1{
+    font-size:1.1rem;
+  }
+
+  nav ul{
+    display:none; /* optional: hides menu on very small screens */
+  }
+}
+
+.hero-image img{
+  max-width:100%;
+  height:auto;
+  border-radius:20px;
+  display:block;
+}
+
