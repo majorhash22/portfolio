@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black Swan Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="progress-bar" id="progress"></div>
+
+<div class="loader" id="loader">
+  <div class="spinner"></div>
+</div>
+
+<canvas id="particles"></canvas>
+<div class="glow" id="glow"></div>
+
+<nav>
+  <h1>BlackSwan</h1>
+  <ul>
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <div class="badge">🚀 Available for Projects</div>
+
+    <h1>
+      Hello! I'm
+      <span class="highlight">Wendel Capangada</span> <br>
+      Full Stack Software Engineer
+    </h1>
+
+    <p>
+      Full-Stack Software Engineer with a decade of experience building
+      scalable web and mobile applications across multiple industries.
+      I specialize in delivering high-performance, maintainable solutions
+      that align technology with business goals while driving measurable impact.
+    </p>
+
+    <div class="hero-buttons">
+      <button class="btn primary" onclick="scrollToSection('projects')">
+        View Work
+      </button>
+
+      <button class="btn secondary" onclick="scrollToSection('contact')">
+        Contact Me
+      </button>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <div class="image-frame">
+      <img src="assets/me-body.jpg" alt="Profile">
+    </div>
+  </div>
+
+</section>
+
+<section id="experience">
+
+  <h2 class="title hidden">Experiences</h2>
+
+  <div class="timeline">
+
+    <div class="timeline-item hidden">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+            <h3>Programmer Analyst</h3>
+            <div class="experience-meta">
+            <span class="company">University of Regina</span><br>
+            <span class="duration">(Dec. 2025 - Present)</span>
+            </div>
+
+            <p>
+            Built responsive modern websites using HTML, CSS, and JavaScript.
+            Focused on UI animations, performance, and clean design systems.
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item hidden">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+            <h3>Full Stack Software Engineer</h3>
+            <div class="experience-meta">
+            <span class="company">Willis Towers Watson PH</span><br>
+            <span class="duration">(Dec. 2022 - June 2025)</span>
+            </div>
+
+            <p>
+            Built responsive modern websites using HTML, CSS, and JavaScript.
+            Focused on UI animations, performance, and clean design systems.
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item hidden">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+            <h3>Senior Software Consultant III</h3>
+            <div class="experience-meta">
+            <span class="company">Inchcape Digital</span><br>
+            <span class="duration">(June 2021 - Nov. 2022)</span>
+            </div>
+
+            <p>
+            Built responsive modern websites using HTML, CSS, and JavaScript.
+            Focused on UI animations, performance, and clean design systems.
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-item hidden">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+            <h3>Business Intelligence and Automation (Supervisory-Level)</h3>
+            <div class="experience-meta">
+            <span class="company">Lazada E-Services Philippines Inc.</span><br>
+            <span class="duration">(Jan. 2020 - Nov. 2020)</span>
+            </div>
+
+            <p>
+            Built responsive modern websites using HTML, CSS, and JavaScript.
+            Focused on UI animations, performance, and clean design systems.
+            </p>
+        </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="projects" class="projects-section">
+
+  <h2 class="title hidden">Featured Projects</h2>
+
+  <div class="projects-container">
+
+    <div class="project-card hidden">
+      <div class="project-tag">Full Stack</div>
+      <h3>Cleaning Management Platform</h3>
+      <p>
+        An all-in-one cleaning operations system in Regina, 
+        Saskatchewan that helps cleaning companies manage bookings, 
+        teams, invoices, and performance efficiently in one centralized dashboard.
+      </p>
+      <div class="project-footer">
+        <span>2026</span>
+        <button class="project-btn">View Project →</button>
+      </div>
+    </div>
+
+    <div class="project-card hidden">
+      <div class="project-tag">Full Stack</div>
+      <h3>Restaurant Online Ordering Platform</h3>
+      <p>
+        A modern web-based ordering solution for Misoya that
+         enhances customer convenience through fast ordering and secure online payments.
+      </p>
+      <div class="project-footer">
+        <span>2026</span>
+        <button class="project-btn">View Project →</button>
+      </div>
+    </div>
+
+    <div class="project-card hidden">
+      <div class="project-tag">Mobile</div>
+      <h3>Augmented and Alternative Communication (AAC)</h3>
+      <p>
+        A communication platform that provides AAC tools in the Filipino language to assist individuals with speech or language difficulties.
+      </p>
+      <div class="project-footer">
+        <span>2023</span>
+        <button class="project-btn">View Case Study →</button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<footer>
+  © 2026 Blue Future Portfolio
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
